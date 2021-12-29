@@ -1,27 +1,26 @@
-const {
-  Model,
-} = require('sequelize');
-
+/* eslint-disable max-lines-per-function */
 module.exports = (sequelize, DataTypes) => {
-  class Client extends Model {
-    /**
-     * Helper method for defining associations.
-     * This method is not a part of Sequelize lifecycle.
-     * The `models/index` file will call this method automatically.
-     */
-    static associate(models) {
-      // define association here
-    }
-  }
-  Client.init({
+  const Client = sequelize.define('Client', {
+    id: { type: DataTypes.INTEGER, primaryKey: true, autoIncrement: true },
     fullName: DataTypes.STRING,
     email: DataTypes.STRING,
     cpf: DataTypes.STRING,
     birthDate: DataTypes.STRING,
-    adress: DataTypes.STRING,
-  }, {
-    sequelize,
-    modelName: 'Client',
+    adress: {
+      street: { type: DataTypes.STRING },
+      district: { type: DataTypes.STRING },
+      city: { type: DataTypes.STRING },
+      state: { type: DataTypes.STRING },
+      country: { type: DataTypes.STRING },
+      cep: { type: DataTypes.STRING },
+      number: { type: DataTypes.NUMBER },
+    },
+  },
+  {
+    timestamps: false,
+    tableName: 'Clients',
+    underscored: true,
   });
+
   return Client;
 };
