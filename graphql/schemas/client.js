@@ -18,7 +18,7 @@ module.exports = gql`
  }
 
  extend type Mutation {
-     register(input: RegisterInput!): RegisterResponse
+    register(input: RegisterInput!): RegisterResponse
  }
 
  type RegisterResponse {
