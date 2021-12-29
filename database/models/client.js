@@ -13,7 +13,7 @@ module.exports = (sequelize, DataTypes) => {
       state: { type: DataTypes.STRING },
       country: { type: DataTypes.STRING },
       cep: { type: DataTypes.STRING },
-      number: { type: DataTypes.NUMBER },
+      number: { type: DataTypes.INTEGER },
     },
   },
   {

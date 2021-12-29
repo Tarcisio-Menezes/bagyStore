@@ -5,8 +5,8 @@ module.exports = (sequelize, DataTypes) => {
     image: DataTypes.STRING,
     description: DataTypes.STRING,
     weight: DataTypes.NUMBER,
-    price: DataTypes.NUMBER,
-    quantity: DataTypes.NUMBER,
+    price: DataTypes.DOUBLE,
+    quantity: DataTypes.INTEGER,
   },
   {
     timestamps: false,

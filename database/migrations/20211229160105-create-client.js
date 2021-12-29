@@ -20,14 +20,26 @@ module.exports = {
       birthDate: {
         type: Sequelize.STRING
       },
-      adress: {
-        street: { type: Sequelize.STRING },
-        district: { type: Sequelize.STRING },
-        city: { type: Sequelize.STRING },
-        state: { type: Sequelize.STRING },
-        country: { type: Sequelize.STRING },
-        cep: { type: Sequelize.STRING },
-        number: { type: Sequelize.NUMBER },
+      street: { 
+        type: Sequelize.STRING 
+      },
+      district: { 
+        type: Sequelize.STRING
+      },
+      city: { 
+        type: Sequelize.STRING
+      },
+      state: { 
+        type: Sequelize.STRING
+      },
+      country: { 
+        type: Sequelize.STRING
+      },
+      cep: { 
+        type: Sequelize.STRING
+      },
+      number: {
+        type: Sequelize.INTEGER 
       },
       createdAt: {
         allowNull: false,

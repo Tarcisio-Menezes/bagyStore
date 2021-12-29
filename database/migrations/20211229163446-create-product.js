@@ -21,7 +21,7 @@ module.exports = {
         type: Sequelize.NUMBER
       },
       price: {
-        type: Sequelize.NUMBER
+        type: Sequelize.DOUBLE
       },
       quantity: {
         type: Sequelize.NUMBER

@@ -21,7 +21,7 @@ module.exports = {
         type: Sequelize.STRING
       },
       parcel: {
-        type: Sequelize.NUMBER
+        type: Sequelize.INTEGER
       },
       clientId: {
         type: Sequelize.INTEGER,
