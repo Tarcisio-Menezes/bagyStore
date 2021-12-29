@@ -6,9 +6,9 @@ module.exports = gql`
      id: Int!
      name: String!
      image: String!
-     description: String!s
-     weight: Number!
-     price: Double!
+     description: String!
+     weight: Float!
+     price: Float!
      quantity: Int!
  }
 
@@ -26,9 +26,9 @@ module.exports = gql`
   id: Int!
   name: String!
   image: String!
-  description: String!s
-  weight: Number!
-  price: Double!
+  description: String!
+  weight: Float!
+  price: Float!
   quantity: Int!
  }
 

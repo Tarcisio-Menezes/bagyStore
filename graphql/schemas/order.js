@@ -18,8 +18,8 @@ extend type Query {
 }
 
  extend type Mutation {
-     createOrder(date: String!, parcel: Int!, client: Client!,
-       products: [Product!], status: String!): CreatePostResponse
+     createOrder(date: String!, parcel: Int!, clientId: Int!,
+       productId: Int!, status: String!): CreateOrderResponse
  }
 
  type CreateOrderResponse {
