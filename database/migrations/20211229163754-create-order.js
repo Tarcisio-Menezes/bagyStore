@@ -17,8 +17,14 @@ module.exports = {
       parcel: {
         type: Sequelize.NUMBER
       },
-      client: {
-        type: Sequelize.STRING
+      clientId: {
+        type: Sequelize.INTEGER,
+        references: {
+          model: {
+            tableName: 'Clients'
+          },
+          key: 'id',
+        },
       },
       status: {
         type: Sequelize.STRING
