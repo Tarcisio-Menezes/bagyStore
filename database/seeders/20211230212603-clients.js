@@ -30,7 +30,7 @@ module.exports = {
               state: 'Guerrero',
               country: 'Mexico',
               cep: '54350757',
-              number: 07,
+              number: 7,
             },
           ],
           {},
